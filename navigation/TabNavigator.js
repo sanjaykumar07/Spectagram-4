@@ -1,16 +1,21 @@
 import * as React from "react";
+import { StyleSheet, Text, View } from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import CreatePost from "../screens/CreatePost";
 import Feed from "../screens/Feed";
-import { View } from "react-native";
 
-const Tab = createBottomTabNavigator();
+import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
+
+const Tab = createMaterialBottomTabNavigator();
 
 const BottomTabNavigator = () => {
   return (
-    <Tab.Navigator
+
+    <Tab.Navigator  
+    labeled={false}
+    barStyle={styles.bottomTabStyle}
       screenOptions={({ route }) => ({
         tabBarIcon: ({ focused, color, size }) => {
           let iconName;
@@ -19,7 +24,7 @@ const BottomTabNavigator = () => {
           } else if (route.name === "CreatePost") {
             iconName = focused ? "create" : "create-outline";
           }
-          return <Ionicons name={iconName} size={size} color={color} />;
+          return <Ionicons name={iconName} size={'230%'} color={color} />;
         },
       })}
       tabBarOptions={{
@@ -33,3 +38,7 @@ const BottomTabNavigator = () => {
   );
 };
 export default BottomTabNavigator;
+
+const styles = StyleSheet.create({
+
+});
