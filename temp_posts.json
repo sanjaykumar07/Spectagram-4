@@ -1,13 +1,11 @@
 [
-    
-        {
-            "author" : "author1",
-            "caption" : "caption1"
-        },
+  {
+    "author": "Jerome K. Jerome",
+    "caption": "he common man’s car is a bicycle as it is the cheapest mode of conveyance and transport. But it needs to be kept in proper working order."
+  },
 
-        {
-            "author" : "author2",
-            "caption" : "caption2"
-        }
-    
+  {
+    "author": "Gerald Durrell",
+    "caption": "A Gorilla in the Guest Room is a humongous tale of the narrator’s decision to enhance the zoo from a mere show-place of animals into a conservation of wildlife place."
+  }
 ]
