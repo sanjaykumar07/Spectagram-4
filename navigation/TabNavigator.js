@@ -40,5 +40,7 @@ const BottomTabNavigator = () => {
 export default BottomTabNavigator;
 
 const styles = StyleSheet.create({
-
+  bottomTabStyle:{
+  
+  }
 });

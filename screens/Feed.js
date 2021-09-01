@@ -42,6 +42,7 @@ export default class Feed extends Component {
             <Text style={styles.appTitleText}>Spectagram</Text>
           </View>
         </View>
+        <View style={{height:RFValue(10)}}/>
         <View style={styles.cardContainer}>
           <FlatList
             keyExtractor={this.keyExtractor}
@@ -78,7 +79,7 @@ const styles = StyleSheet.create({
     resizeMode: "contain",
   },
   appTitleTextContainer: {
-    flex: 0.8,
+    flex: 0.5,
     justifyContent: "center",
   },
   appTitleText: {
