@@ -1,22 +1,17 @@
 import React from "react";
-import { createStackNavigator } from "@react-navigation/stack";
-import TabNavigator from "./TabNavigator";
-import PostScreen from "../screens/StoryScreen";
+import { createDrawerNavigator } from "@react-navigation/drawer";
+import StacNavigator from "./StackNavigator";
+import Profile from "../screens/Profile";
 
-const Stack = createStackNavigator();
+const Drawer = createDrawerNavigator();
 
-const StackNavigator = () => {
-  return (
-    <Stack.Navigator
-      initialRouteName="Home"
-      screenOptions={{
-        headerShown: false
-      }}
-    >
-      <Stack.Screen name="Home" component={TabNavigator} />
-      <Stack.Screen name="PostScreen" component={PostScreen} />
-    </Stack.Navigator>
-  );
+const DrawerNavigator = () => {
+    return (
+        <Drawer.Navigator>
+            <Drawer.Screen name="Home" component={StacNavigator} />
+            <Drawer.Screen name="Profile" component={Profile} />
+        </Drawer.Navigator>
+    );
 };
 
-export default StackNavigator;
+export default DrawerNavigator;

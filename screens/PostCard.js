@@ -16,13 +16,13 @@ export default class PostCard extends Component{
   render(){
     return(
       <TouchableOpacity
-          style={styles.container}
-          onPress={() =>
-            this.props.navigation.navigate('PostScreen', {
-              post: this.props.post
-            })
-          }
-        >
+      style={styles.container}
+      onPress={() =>
+        this.props.navigation.navigate("PostScreen", {
+          author: this.props.author
+        })
+      }
+    >
       <View style={styles.container}>
         <View style={styles.cardContainer}>
           <View style={styles.authorContainer}>
